@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public static Player Instance { get;private set; }
+
     public event EventHandler<OnselectedCounterChangedEventArgs> OnSelectedCounterChanged;
     public class OnselectedCounterChangedEventArgs:EventArgs
     {
@@ -20,6 +22,12 @@ public class Player : MonoBehaviour
     private Vector3 lastInteractDir;
     private ClearCounter selectedCounter;
 
+    private void Awake()
+    {
+        if (Instance != null)
+            Debug.LogError("There is more than one Player instance");
+        Instance = this;
+    }
     private void Start()
     {
         gameInput.OnInteractionAction += GameInput_OnInteractionAction;
