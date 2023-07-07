@@ -10,12 +10,12 @@ public class SelectedCounterVisual : MonoBehaviour
 
     private void Start()
     {
-        Player.Instance.OnSelectedCounterChanged += Instance_OnSelectedCounterChanged;
+        Player.Instance.OnSelectedCounterChanged += Player_OnSelectedCounterChanged;
     }
 
-    private void Instance_OnSelectedCounterChanged(object sender, Player.OnselectedCounterChangedEventArgs e)
+    private void Player_OnSelectedCounterChanged(object sender, Player.OnselectedCounterChangedEventArgs e)
     {
-       if(e.selectedCounter==clearCounter)
+       if(e.selectedCounter == clearCounter)
         {
             Show();
         }
