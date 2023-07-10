@@ -96,7 +96,7 @@ PrefabInstance:
     - target: {fileID: 8489276541531669327, guid: 0004cb1e11ad014419b943c7da960724,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -323,8 +323,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kitchenObjectSO: {fileID: 11400000, guid: 1d82291b01658344ea83effad829b8ee, type: 2}
   counterTopPoint: {fileID: 8870939854067016693}
-  secondClearCounter: {fileID: 0}
-  testing: 0
 --- !u!4 &6695488619158788655 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 548418998124977548, guid: ca245b1e5add6fb4abc01c8da8153c6f,
