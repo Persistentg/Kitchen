@@ -106,7 +106,7 @@ public class Player : MonoBehaviour,IKitchenObjectParent
 
             //Attempt only x movement
             Vector3 moveDirX = new Vector3(moveDir.x, 0, 0).normalized;
-            canMove = !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDir, moveDistance);
+            canMove = (moveDir.x!=0)&&(!Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDir, moveDistance));//使双键按击仍可转向
             if (canMove)
             {
                 //Can move only on the X
@@ -118,7 +118,7 @@ public class Player : MonoBehaviour,IKitchenObjectParent
 
                 //Attempt only Z element
                 Vector3 moveDirZ = new Vector3(0, 0, moveDir.z).normalized;
-                canMove = !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDir, moveDistance);
+                canMove =(moveDir.z!=0)&& (!Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDir, moveDistance));
 
                 if (canMove)
                 {
