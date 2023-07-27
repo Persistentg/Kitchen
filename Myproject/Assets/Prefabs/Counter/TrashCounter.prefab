@@ -158,14 +158,43 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 7453475518919679607}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 548418998124977550, guid: ca245b1e5add6fb4abc01c8da8153c6f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4908069375464248080}
   m_SourcePrefab: {fileID: 100100000, guid: ca245b1e5add6fb4abc01c8da8153c6f, type: 3}
+--- !u!4 &1108237833824370683 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2336435325153633366, guid: ca245b1e5add6fb4abc01c8da8153c6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3390629963174189997}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2923275760491529761 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 548418998124977548, guid: ca245b1e5add6fb4abc01c8da8153c6f,
     type: 3}
   m_PrefabInstance: {fileID: 3390629963174189997}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2923275760491529763 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 548418998124977550, guid: ca245b1e5add6fb4abc01c8da8153c6f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3390629963174189997}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4908069375464248080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2923275760491529763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3cc52b3d23b20141ba5d8d21241e777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counterTopPoint: {fileID: 1108237833824370683}
 --- !u!1001 &6395643056051878620
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -297,7 +326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5879dc02ab79dfd4f851415a27bfecfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseCounter: {fileID: 0}
+  baseCounter: {fileID: 4908069375464248080}
   visualGameObjectArray:
   - {fileID: 3863876166309051201}
 --- !u!4 &7453475518919679607 stripped
