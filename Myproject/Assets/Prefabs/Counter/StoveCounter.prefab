@@ -118,6 +118,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ProgressBarUI
       objectReference: {fileID: 0}
+    - target: {fileID: 2212131615808565613, guid: b0fc1ea31f2fd1a4f9c988f677048c4c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6705416911505833586, guid: b0fc1ea31f2fd1a4f9c988f677048c4c,
         type: 3}
       propertyPath: hasProgressGameObject
