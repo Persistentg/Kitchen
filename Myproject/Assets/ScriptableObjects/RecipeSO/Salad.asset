@@ -13,9 +13,6 @@ MonoBehaviour:
   m_Name: Salad
   m_EditorClassIdentifier: 
   kitchenObjectSOList:
-  - {fileID: 11400000, guid: 85cfad5212431b840983fb62361f5fa6, type: 2}
-  - {fileID: 11400000, guid: bf07e1295214cdc48962ac9dfd25df56, type: 2}
-  - {fileID: 11400000, guid: 34f52de93fd1dc0459d5a36fff1d788f, type: 2}
   - {fileID: 11400000, guid: 91d772eec1e4cdc4ba07b64ce8b63a8d, type: 2}
   - {fileID: 11400000, guid: 785baaaa4494380498ff3f3f780ebd06, type: 2}
-  recipeName: MEGburger
+  recipeName: Salad
